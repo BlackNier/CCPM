@@ -7,6 +7,6 @@
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_home">动态</string>
-    <string name="menu_my">我的</string>
     <string name="menu_items">我的项目</string>
+    <string name="menu_my">我的资料</string>
 </resources>

@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-
     <ListView
         android:id="@+id/lv_news"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="212dp" />
+        android:layout_margin="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

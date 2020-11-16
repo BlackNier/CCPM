@@ -4,7 +4,8 @@
     <color name="voilet">#E0A0C8</color>
     <color name="pink_light">#E4488F</color>
     <color name="pink">#D24490</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#303030</color>
+    <color name="gray">#787878</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bg_lower">#B74791</color>
     <color name="white_light">#FFE4F2</color>
