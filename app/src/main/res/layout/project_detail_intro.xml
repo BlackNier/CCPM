@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/project_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="项目图标"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/project_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="52dp"
+                android:ems="10"
+                android:text="项目名称"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/project_info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="42dp"
+                android:text="xxx创建于xxxx年xx月xx日"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/project_motto_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="项目项目项目项目项目项目"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/project_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/cardview_light_background"
+        android:text="项目周期"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/project_time_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="xxxx年xx月xx日 - xxxx年xx月xx日"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/project_statics_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="项目统计" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.33"
+                android:text="未完成"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.33"
+                android:text="已完成"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.33"
+                android:text="已逾期"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/incomplete_number"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.33"
+                android:text="01"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/complete_number"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.33"
+                android:text="01"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/overdue_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.33"
+                android:text="01"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.33"
+                android:text="待认领"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.33"
+                android:text="今日到期"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.33"
+                android:text="逾期完成"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/overdue_number2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.33"
+                android:text="01"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/complete_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.33"
+                android:text="01"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/incomplete_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.33"
+                android:text="01"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
