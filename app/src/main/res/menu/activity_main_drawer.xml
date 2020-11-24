@@ -18,5 +18,6 @@
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_my"
             android:title="@string/menu_my" />
+
     </group>
 </menu>

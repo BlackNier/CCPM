@@ -1,74 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        style="@style/LoginBar"
-        >
-
-        <TextView
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="用户账号:" />
-
-        <EditText
-            android:id="@+id/et_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="20"
-            android:inputType="textPersonName"
-            android:hint="username" />
-
-    </LinearLayout>
-    <LinearLayout
-        style="@style/LoginBar">
-
-        <TextView
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_marginRight="5dp"
-            android:text="密        码:" />
-
-        <EditText
-            android:id="@+id/et_passward"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="20"
-            android:inputType="textPassword"
-            android:hint="passward"/>
-
-    </LinearLayout>
-    <LinearLayout
-        style="@style/LoginBar">
-
-        <TextView
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_marginRight="5dp"
-            android:text="重复密码:" />
-
-        <EditText
-            android:id="@+id/et_repassward"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="20"
-            android:inputType="textPassword"
-            android:hint="passward"/>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/bt_Register"
-        android:layout_marginTop="30dp"
-        android:layout_width="200dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Button"
-        android:layout_gravity="center"
-        android:text="注册"/>
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/purple"
+                android:text="填写个人资料"/>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <TextView
+                    style="@style/Title"
+                    android:text="邮箱账号:" />
+
+                <EditText
+                    android:id="@+id/et_username_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:hint="邮箱账号（必填）"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <TextView
+                    style="@style/Title"
+                    android:text="密        码:" />
+
+                <EditText
+                    android:id="@+id/et_password_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:hint="密码（必填）"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <TextView
+                    style="@style/Title"
+                    android:text="重复密码:" />
+
+                <EditText
+                    android:id="@+id/et_repassword_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:hint="密码（必填）"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <TextView
+                    style="@style/Title"
+                    android:text="昵        称:" />
+
+                <EditText
+                    android:id="@+id/et_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:hint="昵称"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <TextView
+                    style="@style/Title"
+                    android:text="真实姓名:" />
+
+                <EditText
+                    android:id="@+id/et_realname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:hint="姓名"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <TextView
+                    style="@style/Title"
+                    android:text="联系方式:" />
+
+                <EditText
+                    android:id="@+id/et_phoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:hint="手机号"
+                    android:inputType="phone" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <TextView
+                    style="@style/Title"
+                    android:text="职        位:" />
+
+                <EditText
+                    android:id="@+id/et_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:hint="职位"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <TextView
+                    style="@style/Title"
+                    android:text="个人简介:" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginBar">
+
+                <EditText
+                    android:id="@+id/et_synopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/textarea_bg"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:padding="5dp"
+                    android:hint="简单介绍一下自己吧"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_Register"
+                style="@style/Button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="注册" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
